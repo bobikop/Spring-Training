@@ -23,6 +23,7 @@
         <module name="spring-02-Core-IoC-Stereotype-Annotation" />
         <module name="spring-12-Data-Relationship" />
         <module name="spring-06-Core-BeanScope" />
+        <module name="spring-25-Docker" />
         <module name="spring-13-Data-CinemaLab" />
         <module name="spring-11-Data-TableCreation" />
         <module name="spring-17-REST-ConsumingApis" />
@@ -34,7 +35,6 @@
         <module name="spring-04-Autowiring" />
         <module name="spring-07-SpringBoot-Demo" />
         <module name="spring-24-UnitTesting-MockMVC" />
-        <module name="Spring-25-Docker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -64,7 +64,7 @@
       <module name="spring-22-UnitTesting-JUnit5" target="11" />
       <module name="spring-23-UnitTesting-Mockito" target="11" />
       <module name="spring-24-UnitTesting-MockMVC" target="11" />
-      <module name="Spring-25-Docker" target="11" />
+      <module name="spring-25-Docker" target="11" />
       <module name="spring-26-Data-CinemalLab2" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -73,7 +73,6 @@
       <module name="Spring-15-REST" options="-parameters" />
       <module name="Spring-16-REST-Jackson" options="-parameters" />
       <module name="Spring-19-REST-OpenAPI3" options="-parameters" />
-      <module name="Spring-25-Docker" options="-parameters" />
       <module name="spring-07-SpringBoot-Demo" options="-parameters" />
       <module name="spring-08-MVC-Controller" options="-parameters" />
       <module name="spring-09-MVC-Model" options="-parameters" />
@@ -89,6 +88,7 @@
       <module name="spring-21-AOP" options="-parameters" />
       <module name="spring-23-UnitTesting-Mockito" options="-parameters" />
       <module name="spring-24-UnitTesting-MockMVC" options="-parameters" />
+      <module name="spring-25-Docker" options="-parameters" />
       <module name="spring-26-Data-CinemalLab2" options="-parameters" />
     </option>
   </component>

@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-15-REST/Spring-15-REST.iml" filepath="$PROJECT_DIR$/spring-15-REST/Spring-15-REST.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-16-REST-Jackson/Spring-16-REST-Jackson.iml" filepath="$PROJECT_DIR$/spring-16-REST-Jackson/Spring-16-REST-Jackson.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-19-REST-OpenAPI3/Spring-19-REST-OpenAPI3.iml" filepath="$PROJECT_DIR$/spring-19-REST-OpenAPI3/Spring-19-REST-OpenAPI3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring-25-Docker/Spring-25-Docker.iml" filepath="$PROJECT_DIR$/Spring-25-Docker/Spring-25-Docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring-Training.iml" filepath="$PROJECT_DIR$/.idea/Spring-Training.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-00-Coupling/spring-00-Coupling.iml" filepath="$PROJECT_DIR$/spring-00-Coupling/spring-00-Coupling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-01-Core-IoC-Bean-Annotation/spring-01-Core-IoC-Bean-Annotation.iml" filepath="$PROJECT_DIR$/spring-01-Core-IoC-Bean-Annotation/spring-01-Core-IoC-Bean-Annotation.iml" />
@@ -30,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/spring-22-UnitTesting-JUnit5.iml" filepath="$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/spring-22-UnitTesting-JUnit5.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-23-UnitTesting-Mockito/spring-23-UnitTesting-Mockito.iml" filepath="$PROJECT_DIR$/spring-23-UnitTesting-Mockito/spring-23-UnitTesting-Mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-24-UnitTesting-MockMVC/spring-24-UnitTesting-MockMVC.iml" filepath="$PROJECT_DIR$/spring-24-UnitTesting-MockMVC/spring-24-UnitTesting-MockMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-25-Docker/spring-25-Docker.iml" filepath="$PROJECT_DIR$/Spring-25-Docker/spring-25-Docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-26-Data-CinemalLab2/spring-26-Data-CinemalLab2.iml" filepath="$PROJECT_DIR$/spring-26-Data-CinemalLab2/spring-26-Data-CinemalLab2.iml" />
     </modules>
   </component>
