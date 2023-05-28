@@ -32,10 +32,13 @@ public class CourseController_ResponseEntity {
         return ResponseEntity.ok(courseService.getCourseById(courseId));
     }
 
+
+    // use Spring class ResponseEntity to modify output, create header
     @GetMapping("category/{name}")
-    public ResponseEntity<List<CourseDTO>> getCourseByCategory(@PathVariable("name") String category){
+    public ResponseEntity<List<CourseDTO>> getCourseBycategory(@PathVariable("name") String category){
         return ResponseEntity.ok(courseService.getCoursesByCategory(category));
     }
+
 
     @PostMapping
     public ResponseEntity<CourseDTO> createCourse(@RequestBody CourseDTO course){
