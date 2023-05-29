@@ -10,11 +10,15 @@ import org.springframework.http.HttpStatus;
 @NoArgsConstructor
 public class ResponseWrapper {
 
+
+    //custom class response wrapper is created to show what we will see in API jason,
+    // name of the custom class can be different
     private boolean success;
     private String message;
     private Integer code;
     private Object data;
 
+    // have one constructor without data so when we iuse delete mapping there will not be data anymore to show
     public ResponseWrapper(String message,Object data){
         this.message = message;
         this.data=data;
