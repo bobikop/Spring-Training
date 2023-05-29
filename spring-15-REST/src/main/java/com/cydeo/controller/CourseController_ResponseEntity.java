@@ -39,6 +39,8 @@ public class CourseController_ResponseEntity {
         return ResponseEntity.ok(courseService.getCoursesByCategory(category));
     }
 
+    // create new course using @PostMapping method
+
     @PostMapping
     public ResponseEntity<CourseDTO> createCourse(@RequestBody CourseDTO course){
         return ResponseEntity
