@@ -14,6 +14,7 @@ import java.util.Arrays;
 @RequestMapping("/cydeo")
 public class Consume_RestTemplate {
 
+    // will use this URI in order to consume it
     private final String URI = "https://jsonplaceholder.typicode.com/users";
 
     private final RestTemplate restTemplate;
