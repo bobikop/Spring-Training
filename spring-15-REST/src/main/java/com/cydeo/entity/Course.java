@@ -6,9 +6,8 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "courses")
+@Table(name = "courses") // change table name if needed
 public class Course {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

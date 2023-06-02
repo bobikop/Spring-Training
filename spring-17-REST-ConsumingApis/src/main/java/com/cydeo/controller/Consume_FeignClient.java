@@ -21,6 +21,7 @@ public class Consume_FeignClient {
     @GetMapping("/api/v1/users")
     public ResponseEntity<ResponseWrapper> getUsers(){
 
+        // getUser method it will execute endPooit with getMapping and will get response and then will convert it to user trough jackson
         return ResponseEntity.ok(new ResponseWrapper("UserList Retrieved",userClient.getUsers()));
     }
 
