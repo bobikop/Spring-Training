@@ -46,11 +46,12 @@ public class Consume_RestTemplate {
     public ResponseEntity<Object> consumePostFromDummyApi(){
 
         // first we create (we set) headers by using below listed syntax
-        // we need to set headers for security reasons so we can have acces
+        // we need to set headers for security reasons so we can have access
         HttpHeaders headers =new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         headers.set("app-id","6298ebfecd0551211fce37a6");
 
+        // we set the header with fallowing code (entity)
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         // to past the headers we can use exchange method.
@@ -60,3 +61,8 @@ public class Consume_RestTemplate {
     }
 
 }
+
+// we used three methods
+// getForEntity - if we have DTO and want to convert it to output
+// getForObject - no DTO we just take it and use it
+// exchange - to past the headers
