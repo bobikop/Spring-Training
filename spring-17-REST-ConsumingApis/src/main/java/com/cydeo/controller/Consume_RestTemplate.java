@@ -32,6 +32,7 @@ public class Consume_RestTemplate {
     @GetMapping("{id}")
     public Object readUser(@PathVariable("id") Integer id){
 
+        // based on ID show me certain user - that is our URI represent bellow
         String URL = URI + "/{id}";
 
         return restTemplate.getForObject(URL, Object.class,id);
