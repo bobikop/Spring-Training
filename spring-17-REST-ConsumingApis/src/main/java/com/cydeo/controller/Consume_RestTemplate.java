@@ -45,12 +45,16 @@ public class Consume_RestTemplate {
     @GetMapping("/test")
     public ResponseEntity<Object> consumePostFromDummyApi(){
 
+        // first we create (we set) headers by using below listed syntax
+        // we need to set headers for security reasons so we can have acces
         HttpHeaders headers =new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         headers.set("app-id","6298ebfecd0551211fce37a6");
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
+        // to past the headers we can use exchange method.
+        // exchange method request fallowing paramethers listed in syntax bellow
         return restTemplate.exchange("https://dummyapi.io/data/v1/user?limit=10", HttpMethod.GET,entity,Object.class);
 
     }
