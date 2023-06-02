@@ -35,6 +35,7 @@ public class Consume_RestTemplate {
         // based on ID show me certain user - that is our URI represent bellow
         String URL = URI + "/{id}";
 
+        // consume and return ---- here we are using getForObject method.
         return restTemplate.getForObject(URL, Object.class,id);
 
     }
