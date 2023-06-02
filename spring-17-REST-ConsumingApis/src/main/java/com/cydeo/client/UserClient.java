@@ -13,3 +13,5 @@ public interface UserClient {
     List<User> getUsers();
 
 }
+// whenever in our application we use getUsers method. Method will hit base URL
+// https://jsonplaceholder.typicode.com and add @GetMapping("/users")
