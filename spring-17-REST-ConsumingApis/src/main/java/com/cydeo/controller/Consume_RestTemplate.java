@@ -36,6 +36,8 @@ public class Consume_RestTemplate {
         String URL = URI + "/{id}";
 
         // consume and return ---- here we are using getForObject method.
+        // for getForObject we do not any DTO. In use getForEntity and getForObject have difference in that with
+        // getForEntity we can modify it with Jackson annotation but with getForObject we get it however is looking and consume it
         return restTemplate.getForObject(URL, Object.class,id);
 
     }
