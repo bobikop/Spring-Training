@@ -15,6 +15,10 @@ import reactor.core.publisher.Mono;
 @RestController
 public class Consume_WebClient {
 
+    // in order to use Spring Cloud we are first adding dependency
+    // spring - cloud - starter-feingClient
+    // go and add annotation @EnableFeingClient in the runner class
+
     private WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").build();
 
     private final MovieCinemaService movieCinemaService;
