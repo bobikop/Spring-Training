@@ -14,4 +14,4 @@ public interface UserClient {
 
 }
 // whenever in our application we use getUsers method. Method will hit base URL
-// https://jsonplaceholder.typicode.com and add @GetMapping("/users")
+// https://jsonplaceholder.typicode.com and add @GetMapping("/users") so this endpoint will be executed with getMapping
