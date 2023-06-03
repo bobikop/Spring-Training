@@ -19,6 +19,7 @@ public class Consume_WebClient {
     // spring - cloud - starter-feingClient
     // go and add annotation @EnableFeingClient in the runner class
 
+    // create instance of webClient
     private WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").build();
 
     private final MovieCinemaService movieCinemaService;
@@ -29,6 +30,7 @@ public class Consume_WebClient {
         this.genreService = genreService;
     }
 
+    // create API end point with java reactive programing
     @GetMapping("/flux-movie-cinemas")  //localhost:8080/flux-movie-cinemas
     public Flux<MovieCinemaDTO> readAllCinemaFlux(){
 
@@ -70,14 +72,16 @@ public class Consume_WebClient {
 
 //    ---------------------------WEBCLIENT---------------------------
 
+
+    // consuming API we created above with java reactive programing with webClient
     @GetMapping("/flux")
     public Flux<MovieCinemaDTO> readWithWebClient(){
 
-        return webClient
+        return webClient  // consumung API by using webClient
                 .get()
-                .uri("/flux-movie-cinemas")
+                .uri("/flux-movie-cinemas")// describe uri
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
-                .retrieve()
+                .retrieve() // get response
                 .bodyToFlux(MovieCinemaDTO.class);
 
     }
