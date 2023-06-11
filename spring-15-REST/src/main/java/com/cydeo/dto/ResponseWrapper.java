@@ -18,7 +18,7 @@ public class ResponseWrapper {
     private Integer code;
     private Object data;
 
-    // have one constructor without data so when we iuse delete mapping there will not be data anymore to show
+    // have one constructor without data so when we use delete mapping there will not be data anymore to show
     public ResponseWrapper(String message,Object data){
         this.message = message;
         this.data=data;
