@@ -72,7 +72,6 @@ public class Consume_WebClient {
 
 //    ---------------------------WEBCLIENT---------------------------
 
-
     // consuming API we created above with java reactive programing with webClient
     @GetMapping("/flux")
     public Flux<MovieCinemaDTO> readWithWebClient(){
@@ -83,9 +82,7 @@ public class Consume_WebClient {
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .retrieve() // get response
                 .bodyToFlux(MovieCinemaDTO.class);
-
     }
-
     @GetMapping("/mono/{id}")
     public Mono<MovieCinemaDTO> readMonoWithWebClient(@PathVariable("id") Long id){
 
