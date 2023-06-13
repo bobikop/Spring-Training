@@ -27,7 +27,7 @@ public class OrganizationController {
     }
 
     @PostMapping
-    @RolesAllowed({"ADMIN","USER"})
+    @RolesAllowed({"ADMIN","USER"}) // allows admin and user to be able to create organization
     public ResponseEntity<Organization> createOrganization(@RequestBody Organization organization) {
         return ResponseEntity.status(HttpStatus.CREATED).body(organizationService.create(organization));
     }
