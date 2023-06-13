@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Setter
 @ToString
 @Entity
-@Table(name = "licenses")
+@Table(name = "licenses")  // change table name if needed
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @NoArgsConstructor
 public class License {
