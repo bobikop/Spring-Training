@@ -10,7 +10,7 @@ import javax.annotation.security.RolesAllowed;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/v1/organization/{organizationId}/license")
+@RequestMapping(value = "/v1/organization/{organizationId}/license")  // in order to create license we nee dto have organization first
 public class LicenseController {
     private final LicenseService licenseService;
 
