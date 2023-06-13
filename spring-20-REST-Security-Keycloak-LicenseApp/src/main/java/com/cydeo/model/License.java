@@ -17,6 +17,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class License {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "license_id", nullable = false)
