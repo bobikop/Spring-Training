@@ -18,14 +18,14 @@ import org.springframework.security.web.authentication.session.SessionAuthentica
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(jsr250Enabled = true)
+@EnableGlobalMethodSecurity(jsr250Enabled = true)  // go and define each role above method in controller
 public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 @Override
     protected void configure(HttpSecurity http) throws Exception {
         super.configure(http);
         http.authorizeRequests()
                 .anyRequest()
-                .permitAll();
+                .permitAll();  // we need to secure /restrict access not to be permit to all - for this reason we have @EnableGlobalMethodSecurity
         http.csrf().disable();
 }
 @Autowired
