@@ -6,7 +6,7 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@ToString // to be able to print it we use this lombok @ToString annotation
 public class Organization {
 
     public Long id;
