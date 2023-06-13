@@ -34,7 +34,7 @@ public class OrganizationController {
 
     @DeleteMapping("/{organizationId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @RolesAllowed({"ADMIN"})
+    @RolesAllowed({"ADMIN"})  // allows only admin to be able to delete organization
     public void deleteOrganization(@PathVariable("organizationId") Long organizationId) {
         organizationService.delete(organizationId);
     }
