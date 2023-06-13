@@ -10,7 +10,6 @@ import org.springframework.web.client.RestTemplate;
 public class OrganizationRestTemplateClient {
 
     private final RestTemplate restTemplate;
-
     public OrganizationRestTemplateClient(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }

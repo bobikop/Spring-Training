@@ -10,5 +10,4 @@ public interface OrganizationFeignClient {
 
     @GetMapping("/{organizationId}")
     Organization getOrganization(@PathVariable("organizationId") Long organizationId);
-
 }

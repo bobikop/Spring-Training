@@ -44,5 +44,4 @@ public class License {
 
     @Transient
     private String contactEmail;
-
 }
