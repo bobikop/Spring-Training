@@ -12,6 +12,8 @@ import javax.annotation.security.RolesAllowed;
 @RequestMapping(value = "/v1/organization")
 public class OrganizationController {
 
+    // after we added security dependency and added configuration in application properties we need to create config module with security config class
+
     private final OrganizationService organizationService;
 
     public OrganizationController(OrganizationService organizationService) {
