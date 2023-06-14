@@ -23,3 +23,4 @@ public class FeignClientInterceptor implements RequestInterceptor {
     }
 
 }
+// tokens are not switchable in between application automatically
