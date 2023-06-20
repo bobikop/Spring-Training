@@ -25,12 +25,12 @@ public class LoggingAspect {
 //        logger.info("Info log..........");
 //    }
 //
-//    @Before("execution(* com.cydeo.controller.CourseController.*(..))")
-//    public void log() {
+//    @Before("execution(* com.cydeo.controller.CourseController.*(..))")  // any method eccepted
+////    public void log() {
 //        logger.info("Info log..........");
 //    }
 //
-//    @Pointcut("execution(* com.cydeo.repository.CourseRepository.findById(*))")
+//    @Pointcut("execution(* com.cydeo.repository.CourseRepository.findById(*))") // findById
 //    public void courseRepositoryFindByIdPC() {}
 //
 //    @Before("courseRepositoryFindByIdPC()")
