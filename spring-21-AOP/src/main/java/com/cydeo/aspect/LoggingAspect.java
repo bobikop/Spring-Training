@@ -18,7 +18,7 @@ public class LoggingAspect {
 
 //    @Pointcut("execution(* com.cydeo.controller.CourseController.*(..))")
 //    public void myPointcut() {}
-    // * star confirm that we arcepting any return type
+    // * star confirm that we accepting any return type
 //
 //    @Before("myPointcut()")
 //    public void log() {
