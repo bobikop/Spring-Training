@@ -3,7 +3,7 @@ package com.cydeo.controller;
 import com.cydeo.annotation.LoggingAnnotation;
 import com.cydeo.dto.CourseDTO;
 import com.cydeo.service.CourseService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.*;  // copy this line to the LoggingAspect class
 
 import java.util.List;
 
