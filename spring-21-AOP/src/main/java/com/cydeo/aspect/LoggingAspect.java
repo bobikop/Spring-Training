@@ -10,11 +10,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Aspect
+@Aspect   // adding annotation we are define aspect class
 @Component
 public class LoggingAspect {
 
-    Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
+    Logger logger = LoggerFactory.getLogger(LoggingAspect.class);  // using this logger to put some information on the console
 
 //    @Pointcut("execution(* com.cydeo.controller.CourseController.*(..))")
 //    public void myPointcut() {}
