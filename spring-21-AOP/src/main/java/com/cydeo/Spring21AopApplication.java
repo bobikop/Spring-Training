@@ -11,7 +11,6 @@ public class Spring21AopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Spring21AopApplication.class, args);
 	}
-
 	@Bean
 	public ModelMapper mapper() {
 		return new ModelMapper();
