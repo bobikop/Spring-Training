@@ -31,7 +31,7 @@ class CalculatorTest {
     void add() {
         System.out.println("Add method");
         int actual = Calculator.add(2, 3);
-        assertEquals(5, actual, "Test failed.");
+        assertEquals(5, actual, "Test failed."); // check and verify if expected and actual result are same
     }
 
     @Test
