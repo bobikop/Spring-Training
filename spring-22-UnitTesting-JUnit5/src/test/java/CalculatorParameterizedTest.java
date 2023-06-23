@@ -4,7 +4,7 @@ import org.junit.jupiter.params.provider.*;
 
 public class CalculatorParameterizedTest {
 
-    @ParameterizedTest
+    @ParameterizedTest // this annotation point that we will use some data from method parameter for test
     @ValueSource(strings = {"Java", "JS", "TS"})
     void testCase1(String arg) {
         Assertions.assertFalse(arg.isEmpty());
