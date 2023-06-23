@@ -15,7 +15,6 @@ public class CalculatorParameterizedTest {
     void testCase1(int num) {
         Assertions.assertEquals(0, num % 3);
     }
-
     @ParameterizedTest
     @ValueSource(strings = {"Java", "JS", "TS"})
 //    @EmptySource            // ""
