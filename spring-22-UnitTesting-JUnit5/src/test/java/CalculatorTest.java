@@ -55,7 +55,6 @@ class CalculatorTest {
         assertEquals("add", Calculator.operator);
         assertTrue(Calculator.operator.equals("add"));
     }
-
     @Test
     void testCase3() {
         System.out.println("Test Case 3");
