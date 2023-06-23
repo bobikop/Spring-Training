@@ -27,7 +27,7 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("MyMethod")
+    @DisplayName("MyMethod")  // adding header instead the method name when test is running
     void add() {
         System.out.println("Add method");
         int actual = Calculator.add(2, 3);
