@@ -15,8 +15,8 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)  // first step
 class UserServiceImplTest {
 
-    @Mock
-    UserRepository userRepository;      // Mock object instead of UserRepository object
+    @Mock //
+    UserRepository userRepository;      // Mock object instead of service injection
 
     @Mock
     UserMapper userMapper;
