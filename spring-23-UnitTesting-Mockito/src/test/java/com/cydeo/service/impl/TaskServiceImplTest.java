@@ -48,7 +48,6 @@ class TaskServiceImplTest {
         verify(taskMapper).convertToDto(task);
 
     }
-
     @Test
     void findById_BDD_Test() {
 
