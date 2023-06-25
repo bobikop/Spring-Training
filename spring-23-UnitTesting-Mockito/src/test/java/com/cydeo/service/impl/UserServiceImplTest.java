@@ -19,7 +19,7 @@ class UserServiceImplTest {
     UserRepository userRepository;      // Mock object instead of service injection
 
     @Mock
-    UserMapper userMapper;
+    UserMapper userMapper;  // Mock object
 
     @InjectMocks
     UserServiceImpl userService;
@@ -27,7 +27,7 @@ class UserServiceImplTest {
 //    UserServiceImpl userService = new UserServiceImpl(userRepository, userMapper, projectService, taskService);
 
     @Test
-    void findByUserName_Test() {
+    void findByUserName_Test() { // this is the method form implementation which we want to test
 
         // I'm calling the real method inside the main, which is the method I want to test.
         userService.findByUserName("harold@manager.com");
